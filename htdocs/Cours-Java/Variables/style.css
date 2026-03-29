@@ -1,10 +1,4 @@
 /* Mise en page du corps*/
-body {
-    font-family: Arial, sans-serif;
-    background-color: #dbd8d8;
-    color: #333;
-}
-
 pre {
     max-width: 40%;
 }
