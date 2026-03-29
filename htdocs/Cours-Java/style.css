@@ -1,0 +1,52 @@
+/* Mise en page du corps*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #dbd8d8;
+    color: #333;
+}
+
+main {
+    background-image: url(images/java_fond.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background-color: brown;
+    border: 1px solid #9c9090;
+    border-radius: 5px;
+    padding: 20px;
+    margin:  25px;
+    width: 300px;
+    text-align: center;
+}
+
+.card button {
+    display: block;
+    background-color: #4346f3;
+    color: white;
+    border: 1px solid #9c9090;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #5558ff;
+
+    border: none;
+    border-radius: 5px;
+    
+    padding: 10px 20px;
+    cursor: pointer;
+}

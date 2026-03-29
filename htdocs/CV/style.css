@@ -1,0 +1,12 @@
+body{
+    margin: auto;
+    height: auto;
+    background-color: black;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    cursor: zoom-in;
+    aspect-ratio: auto 100 / 50;
+}

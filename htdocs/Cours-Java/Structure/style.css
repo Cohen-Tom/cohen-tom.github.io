@@ -1,0 +1,23 @@
+/* Mise en page du corps*/
+#tableaux {
+    padding: 20px 10px 20px 10px;
+    background-image: url("../images/structure.png");    
+    background-size: cover;
+    background-position: center;
+}
+
+table {
+    margin-top: 20px;
+    background-color: rgb(213, 215, 216);
+}
+
+table caption {
+    background-color: rgb(213, 215, 216);
+    border: 2px solid black;
+    border-style: ridge;
+    padding: 5px;
+}
+
+pre {
+    max-width: 40%;
+}

@@ -1,0 +1,8 @@
+/*Mise en page du corps*/
+main section {
+    margin-top: 30px;
+}
+
+pre {
+    max-width: 40%;
+}
