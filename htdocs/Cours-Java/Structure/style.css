@@ -1,7 +1,7 @@
 /* Mise en page du corps*/
 #tableaux {
     padding: 20px 10px 20px 10px;
-    background-image: url("../Images/structure.jpg");    
+    background-image: url("../images/structure.jpg");    
     background-size: cover;
     background-position: center;
 }

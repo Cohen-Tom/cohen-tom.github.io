@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    background-image: url(Images/java_fond.jpg);
+    background-image: url(images/java_fond.jpg);
     background-size: cover;
     background-position: center;
     padding: 20px;
