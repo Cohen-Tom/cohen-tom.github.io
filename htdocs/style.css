@@ -121,15 +121,15 @@ footer {
     text-align: center;
 }
 
-#next img, #prev img{
+#next img, #prev img, #nextLessons img, #prevLessons img {
     max-width: 30px;
 }
 
-#next img{
+#next img, #nextLessons img {
     transform: rotate(180deg);
 }
 
-#project-count {
+#project-count, #Lesson-count {
     font-weight: normal;
     font-size: 0.9em;
     color: #555;
