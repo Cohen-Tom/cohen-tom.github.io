@@ -3,7 +3,9 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    /*background: linear-gradient(to bottom, #2e3e4e, #e9eef3);
+    background: repeating-radial-gradient(ellipse at center, #2e3e4e, #e9eef3 100px);*/
+    background: radial-gradient(ellipse at center, #2e3e4e, #e9eef3);
     color: #333;
 }
 
