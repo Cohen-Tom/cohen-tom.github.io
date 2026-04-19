@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport – Projet Bataille</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Icone/DEV.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Rapport de projet</h1>
+    <h2>Jeu de cartes – Bataille (Python / Tkinter)</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#objectif">Objectifs</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#fonctionnement">Fonctionnement</a></li>
+        <li><a href="#robot">Bot</a></li>
+        <li><a href="#technos">Technologies</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="intro">
+        <h3>Introduction</h3>
+        <p>
+            Le projet Bataille est une application Python qui reproduit
+            le jeu de cartes classique de la bataille. Il oppose un joueur humain
+            à un adversaire automatisé via une interface graphique complète.
+        </p>
+    </section>
+
+    <section id="objectif">
+        <h3>Objectifs du projet</h3>
+        <ul>
+            <li>Développer un jeu de cartes interactif</li>
+            <li>Utiliser Tkinter pour l’interface graphique</li>
+            <li>Mettre en place un bot automatisé</li>
+            <li>Ajouter un système de paris et de gestion d’argent</li>
+        </ul>
+    </section>
+
+    <section id="architecture">
+        <h3>Architecture générale</h3>
+        <p>
+            Le projet est structuré selon une architecture orientée objet.
+            Le fichier Bataille.py centralise la logique du jeu,
+            tandis que robot.py gère le comportement de l’adversaire.
+        </p>
+    </section>
+
+    <section id="fonctionnement">
+        <h3>Fonctionnement du jeu</h3>
+        <p>
+            Les cartes sont mélangées et distribuées équitablement.
+            À chaque tour, le joueur et le bot jouent une carte.
+            La carte de valeur la plus élevée remporte le pli.
+        </p>
+        <p>
+            Le jeu propose un mode manuel et un mode automatique,
+            permettant d’enchaîner plusieurs coups successifs.
+        </p>
+    </section>
+
+    <section id="robot">
+        <h3>Gestion du bot</h3>
+        <p>
+            Le bot est implémenté dans le fichier robot.py.
+            Il joue automatiquement la carte située au sommet de son paquet
+            et applique strictement les règles du jeu de bataille.
+        </p>
+    </section>
+
+    <section id="technos">
+        <h3>Technologies utilisées</h3>
+        <table>
+            <tr>
+                <th>Technologie</th>
+                <th>Rôle</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Langage principal</td>
+            </tr>
+            <tr>
+                <td>Tkinter</td>
+                <td>Interface graphique</td>
+            </tr>
+            <tr>
+                <td>Programmation orientée objet</td>
+                <td>Structure logicielle</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="conclusion">
+        <h3>Conclusion</h3>
+        <p>
+            Le projet Bataille met en œuvre une application complète mêlant
+            logique de jeu, interface graphique et automatisation.
+            Il constitue une base solide pouvant être enrichie par
+            de nouvelles fonctionnalités.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © Rapport technique – Projet Bataille
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

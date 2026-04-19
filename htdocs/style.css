@@ -1,0 +1,203 @@
+/* Style général */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background: linear-gradient(to bottom, #2e3e4e, #e9eef3);
+    background: repeating-radial-gradient(ellipse at center, #2e3e4e, #e9eef3 100px);*/
+    background: radial-gradient(ellipse at center, #5981a8, #e9eef3);
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    border-bottom: 2px solid black;
+}
+
+/* Boutons */
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Pied de page */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.abt {
+    text-align: justify;
+}
+
+/* Cartes (Projets & Cours) */
+.projet,
+._cours_ {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #00b4d8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.projet h3,
+._cours_ h3 {
+    margin-top: 0;
+}
+
+.projet p{
+    text-align:justify;
+}
+
+/* Animation des projets */
+.projet {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    display: none;
+}
+
+.projet.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 8px 18px;
+    margin: 0 6px;
+    font-weight: bold;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#ButtonCV{
+    text-align: center;
+}
+
+#next img, #prev img, #nextLessons img, #prevLessons img {
+    max-width: 30px;
+}
+
+#next img, #nextLessons img {
+    transform: rotate(180deg);
+}
+
+#project-count, #Lesson-count {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+
+    /* Réduction des espacements */
+    section {
+        padding: 20px;
+    }
+
+    /* Navigation en colonne */
+    header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav a {
+        margin: 0;
+    }
+
+    /* Titres mieux proportionnés */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    /* Cartes projets et cours */
+    .projet,
+    ._cours_ {
+        padding: 15px;
+    }
+    
+    .projet {
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        transform: translateY(10px);
+    }
+    
+    .projet p {
+        text-align: left;
+    }
+
+    /* Boutons plus larges pour le tactile */
+
+    .pagination {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pagination button {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+}

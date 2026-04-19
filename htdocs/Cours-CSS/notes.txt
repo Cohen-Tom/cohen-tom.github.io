@@ -1,0 +1,26 @@
+Ecriture d'un style
+
+nom {attribut: valeur;}
+
+.nom_classe {attribut: valeur;}
+.nom_classe elm_classe {attribut: valeur;}
+
+#identifiant {attribut: valeur;}
+
+Style pour du texte en CSS:
+-> text-transform : uppercase;          | transforme le texte en maj
+-> letter-spacing: 3px;                 | Décale les lettres de 3 pixels
+-> text-align: type;                    | Aligne le texte au centre (hotizontalement)
+-> font-size: 2.5rem;                   | Définit la taille du texte à 2.5 rem
+-> text-shadow: 0 0 0 black;            | Gérer les params directement sur le navigateur
+-> color: nom_couleur||rgb()...;        | Colorie le texte
+-> text-decoration: type;               | Rajoute du soulignement
+
+Style pour des <<Boxes>> FlexBox
+-> height: size(px);                    | Définit la hauteur de la boxe
+-> wheigt: percent(%);                  | Définit la longeur de la page en fonctionde l'appareil
+-> margin: 0 auto;                      | Centre automatiquement la page entre la gauche et la droite
+-> border: size(px) type color;         | Affiche une bordure de taille syze, de type type et de la couleur choisie
+-> border-radius: px;                   | Arrondi les coins
+-> border-radius: hg hd bd bg;          | Autre méthode
+-> padding: size(px);                   | Créer une marge interne
