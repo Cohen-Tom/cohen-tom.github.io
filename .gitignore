@@ -1,13 +1,15 @@
-# 1. Ignorer tout le contenu de AI_Whatsapp
+# 1. Ignorer tout ce qui est dans AI_Whatsapp
 AI_Whatsapp/*
 
-# 2. SAUF le dossier Website (et tout son contenu)
+# 2. SAUF le dossier Website
+# On autorise le dossier lui-même ET tout son contenu récursivement
 !AI_Whatsapp/Website/
+!AI_Whatsapp/Website/**
 
-# 3. Ignorer spécifiquement le venv (même s'il est dans AI_Whatsapp)
+# 3. Ignorer spécifiquement le venv
 AI_Whatsapp/venv/
 
-# 4. Ignorer les fichiers de configuration de l'IDE
+# 4. Ignorer le script d'automatisation lui-même
 pushToGithub.py
 
 # 5. Fichiers Python et système
