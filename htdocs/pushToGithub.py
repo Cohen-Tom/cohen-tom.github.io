@@ -1,7 +1,7 @@
 import subprocess
 import os
 
-ROOT = r"C:\Users\Tom_Le_BG\Desktop\Projets_Sites\cohen-tom.github.io\htdocs"
+ROOT = r"C:\Users\Tom_Le_BG\Desktop\Projets_Sites\cohen-tom.github.io"
 
 def main(commit_message=None):
     print("📦 Ajout des fichiers...")
