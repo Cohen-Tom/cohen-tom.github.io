@@ -7,7 +7,10 @@ AI_Whatsapp/*
 # 3. Ignorer spécifiquement le venv (même s'il est dans AI_Whatsapp)
 AI_Whatsapp/venv/
 
-# 4. Fichiers Python et système
+# 4. Ignorer les fichiers de configuration de l'IDE
+pushToGithub.py
+
+# 5. Fichiers Python et système
 __pycache__/
 *.pyc
 .env
