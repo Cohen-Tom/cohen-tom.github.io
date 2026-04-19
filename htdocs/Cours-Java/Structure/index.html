@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure Habituelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+    <header>
+        <h1>Structure Du Programme</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><strong>Accueil</strong></a></li>
+                <li><a href="../index.html"><strong>Retour</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>
+                La structure habituelle d'un programme Java comprend plusieurs éléments clés, notamment les déclarations de classes, les méthodes, et les blocs de code. 
+                Un programme Java commence généralement par la déclaration d'une classe, qui est le point d'entrée du programme. À l'intérieur de cette classe, vous trouverez la
+                méthode principale (main), qui est exécutée lorsque le programme est lancé. En plus de la méthode principale, une classe peut contenir d'autres méthodes pour organiser
+                le code et faciliter la réutilisation.
+            </p>
+
+            <p>
+                Un projet est composé de plusieurs classes, chacune ayant une responsabilité spécifique. Habituellement, on crée une classe par fichier. Le projet doit être composé d'au
+                moins une classe contenant la méthode main, qui est le point d'entrée du programme. Les autres classes peuvent être utilisées pour définir des objets, des fonctions,
+                ou des structures de données.
+                La classe contenant la méthode main est souvent appelée "classe principale" ou "classe d'exécution". C'est à partir de cette classe que le programme commence à s'exécuter,
+                et elle peut appeler d'autres classes et méthodes pour accomplir des tâches spécifiques. Elle se rédige généralement de la manière suivante :
+            </p>
+
+<pre><code>//Main file
+public class Main {
+    public static void main(String[] args) {
+        private Maclasse personne1 = new MaClasse("Jean", 25);
+
+        personne1.afficherInformations();
+    }
+}</code></pre>
+        
+            <p>
+                En dehors de la classe principale, pour créer une classe on suit souvent la structure suivante :
+                <ul>
+                    <li><strong>Déclaration de la classe :</strong> On commence par déclarer la classe en utilisant le mot-clé "class" suivi du nom de la classe.</li>
+                    <li><strong>Attributs :</strong> Ensuite, on peut définir les attributs de la classe, qui sont des variables qui stockent les données associées à chaque instance de la classe.</li>
+                    <li><strong>Constructeurs :</strong> Les constructeurs sont des méthodes spéciales utilisées pour initialiser les objets de la classe. Ils ont le même nom que la classe et n'ont pas de
+                        type de retour.</li>
+                    <li><strong>Getters et Setters :</strong> Ces méthodes permettent de lire et de modifier les attributs d'une instance de la classe de manière contrôlée.</li>
+                    <li><strong>Méthodes :</strong> Enfin, on peut définir des méthodes pour la classe, qui sont des fonctions associées à la classe et qui peuvent être appelées pour effectuer des actions
+                        spécifiques.</li>
+                </ul>
+            </p>
+<pre><code>//Example of a class
+public class MaClasse {
+    // Attributs
+    private String nom;
+    private int age;
+
+    // Constructeur
+    public MaClasse(String nom, int age) {
+        this.nom = nom;
+        this.age = age;
+    }
+
+    // Getters et Setters
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Méthodes
+    public void afficherInformations() {
+        System.out.println("Nom : " + nom);
+        System.out.println("Âge : " + age);
+    }
+}</code></pre>
+            <p>
+                Il existe trois types d'état pour un attribut : <strong>public</strong>, <strong>private</strong>, et <strong>protected</strong>. Un attribut public est accessible depuis
+                n'importe quelle classe, tandis qu'un attribut private n'est accessible que depuis la classe dans laquelle il est déclaré. Un attribut protected est accessible depuis la
+                classe dans laquelle il est déclaré et depuis les classes qui en héritent. Pour modifier la valeur d'un attribut on doit rajouter le terme <strong>this</strong> devant le
+                nom de l'attribut, ce qui permet de différencier l'attribut de la classe de la variable locale utilisée dans le constructeur ou les méthodes.
+            </p>
+            <p>
+                Il existe des méthodes prédefinies en Java, comme <code>toString()</code> ou <code>equals()</code>, qui peuvent être utilisées pour effectuer des opérations spécifiques sur les
+                objets. Voici une liste de ces méthodes les plus courantes :
+            </p>
+        </section>
+
+        <section id="tableaux">
+            <table>
+                <caption>Méthodes prédéfinies en Java pour les Strings</caption>
+                <thead>
+                    <tr>
+                        <th>Méthode</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><code>var.toString()</code></td>
+                    <td>Retourne une représentation sous forme de chaîne de caractères de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.length()</code></td>
+                    <td>Retourne la longueur de la chaîne de caractères de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.charAt(int index)</code></td>
+                    <td>Retourne le caractère à l'indice spécifié dans la chaîne de caractères de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.substring(int beginIndex, int endIndex)</code></td>
+                    <td>Retourne une sous-chaîne de la chaîne de caractères de la variable var, depuis l'indice beginIndex jusqu'à l'indice endIndex.</td>
+                </tr>
+                <tr>
+                    <td><code>var.equals(String chaine)</code></td>
+                    <td>Compare la variable var actuelle avec une autre variable pour vérifier s'ils sont égaux.</td>
+                </tr>
+                <tr>
+                    <td><code>var.equalsIgnoreCase(String chaine)</code></td>
+                    <td>Compare la variable var actuelle avec une autre variable pour vérifier s'ils sont égaux, en ignorant les différences de casse.</td>
+                </tr>
+                <tr>
+                    <td><code>var.contains(String chaine)</code></td>
+                    <td>Vérifie si la variable var contient une certaine chaîne de caractères.</td>
+                </tr>
+                <tr>
+                    <td><code>var.toLowerCase()</code></td>
+                    <td>Retourne une nouvelle chaîne de caractères avec tous les caractères de la variable var convertis en minuscules.</td>
+                </tr>
+                <tr>
+                    <td><code>var.toUpperCase()</code></td>
+                    <td>Retourne une nouvelle chaîne de caractères avec tous les caractères de la variable var convertis en majuscules.</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <table>
+                <caption>Méthodes prédéfinies en Java pour les Integers et Doubles</caption>
+                <thead>
+                    <tr>
+                        <th>Méthode</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><code>var.toString()</code></td>
+                    <td>Retourne une représentation sous forme de chaîne de caractères de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.intValue()</code></td>
+                    <td>Retourne la valeur entière de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.doubleValue()</code></td>
+                    <td>Retourne la valeur double de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.parseInt(String s)</code></td>
+                    <td>Retourne la valeur entière de la chaîne de caractères s.</td>
+                </tr>
+                <tr>
+                    <td><code>var.parseDouble(String s)</code></td>
+                    <td>Retourne la valeur double de la chaîne de caractères s.</td>
+                </tr>
+                <tr>
+                    <td><code>var.compareTo(int autre)</code></td>
+                    <td>Compare la variable var actuelle avec une autre variable pour vérifier si elle est inférieure, égale ou supérieure à l'autre variable.<br>
+                        Retourne un entier négatif, zéro ou un entier positif selon le résultat de la comparaison.</td>
+                </tr>
+                <tr>
+                    <td><code>max(int a, int b)</code></td>
+                    <td>Retourne la valeur maximale entre les deux entiers a et b.</td>
+                </tr>
+                <tr>
+                    <td><code>min(int a, int b)</code></td>
+                    <td>Retourne la valeur minimale entre les deux entiers a et b.</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <table>
+                <caption>Méthodes prédéfinies en Java pour les Booleans</caption>
+                <thead>
+                    <tr>
+                        <th>Méthode</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><code>var.toString()</code></td>
+                    <td>Retourne une représentation sous forme de chaîne de caractères de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.booleanValue()</code></td>
+                    <td>Retourne la valeur booléenne de la variable var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.parseBoolean(String s)</code></td>
+                    <td>Retourne la valeur booléenne de la chaîne de caractères s.</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <table>
+                <caption>Méthodes prédéfinies en Java pour les Arrays</caption>
+                <thead>
+                    <tr>
+                        <th>Méthode</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><code>var.length</code></td>
+                    <td>Retourne la longueur de l'array var.</td>
+                </tr>
+                <tr>
+                    <td><code>Arrays.toString(var)</code></td>
+                    <td>Retourne une représentation sous forme de chaîne de caractères de l'array var.</td>
+                </tr>
+                <tr>
+                    <td><code>Arrays.sort(var)</code></td>
+                    <td>Trie l'array var dans l'ordre croissant.</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <caption>Méthodes prédéfinies en Java pour les Lists et ArrayLists</caption>
+                <thead>
+                    <tr>
+                        <th>Méthode</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td><code>var.size()</code></td>
+                    <td>Retourne la taille de la collection var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.isEmpty()</code></td>
+                    <td>Retourne true si la collection var est vide, sinon retourne false.</td>
+                </tr>
+                <tr>
+                    <td><code>var.contains(Object o)</code></td>
+                    <td>Retourne true si la collection var contient l'objet o, sinon retourne false.</td>
+                </tr>
+                <tr>
+                    <td><code>var.add(Object o)</code></td>
+                    <td>Ajoute l'objet o à la collection var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.remove(Object o)</code></td>
+                    <td>Supprime l'objet o de la collection var s'il est présent.</td>
+                </tr>
+                <tr>
+                    <td><code>var.remove(int index)</code></td>
+                    <td>Supprime l'élément à l'index spécifié de la collection var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.get(int index)</code></td>
+                    <td>Retourne l'élément à l'index spécifié de la collection var.</td>
+                </tr>
+                <tr>
+                    <td><code>var.set(int index, Object o)</code></td>
+                    <td>Remplace l'élément à l'index spécifié de la collection var par l'objet o.</td>
+                </tr>
+                <tr>
+                    <td><code>var.clear()</code></td>
+                    <td>Supprime tous les éléments de la collection var.</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cours Java. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

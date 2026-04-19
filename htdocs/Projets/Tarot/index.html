@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport – Projet Tarot</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Icone/DEV.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Rapport de projet</h1>
+    <h2>Jeu de cartes – Tarot (Python / Tkinter)</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#objectif">Objectifs</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#fonctionnement">Fonctionnement</a></li>
+        <li><a href="#bots">Intelligence artificielle</a></li>
+        <li><a href="#technos">Technologies</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="intro">
+        <h3>Introduction</h3>
+        <p>
+            Le projet Tarot Joueur VS Bots est une application développée en Python avec Tkinter
+            permettant de jouer au jeu de tarot français contre plusieurs adversaires contrôlés par l’ordinateur.
+            Il propose une interface graphique immersive et respecte les règles fondamentales du tarot.
+        </p>
+    </section>
+
+    <section id="objectif">
+        <h3>Objectifs du projet</h3>
+        <ul>
+            <li>Implémenter un jeu de tarot fonctionnel et interactif</li>
+            <li>Créer une interface graphique complète avec Tkinter</li>
+            <li>Gérer plusieurs joueurs (humain et bots)</li>
+            <li>Respecter les règles officielles du tarot</li>
+            <li>Automatiser les décisions des joueurs virtuels (les robots)</li>
+        </ul>
+    </section>
+
+    <section id="architecture">
+        <h3>Architecture générale</h3>
+        <p>
+            Le projet est organisé en plusieurs modules afin de séparer clairement les responsabilités :
+        </p>
+        <ul>
+            <li><strong>1920x1080.py</strong> : fichier principal gérant l’interface graphique et le déroulement du jeu</li>
+            <li><strong>Gestion_paquets.py</strong> : distribution des cartes, vérification de l’état du jeu et calcul des points</li>
+            <li><strong>Actions_Bot.py</strong> : logique de jeu des bots et gestion automatique des plis</li>
+        </ul>
+        <p>
+            Cette architecture modulaire facilite la lisibilité du code et permet d’éventuelles évolutions futures.
+        </p>
+    </section>
+
+    <section id="fonctionnement">
+        <h3>Fonctionnement du jeu</h3>
+        <p>
+            Au lancement de l’application, le joueur choisit le nombre total de participants.
+            Les cartes sont ensuite mélangées et distribuées automatiquement.
+        </p>
+        <p>
+            À chaque tour, les joueurs jouent une carte selon un ordre et un sens définis.
+            Le jeu vérifie les règles (famille demandée, atouts, bouts) et détermine le gagnant du pli.
+            L’interface affiche en temps réel les cartes jouées ainsi que le nombre de cartes restantes.
+        </p>
+    </section>
+
+    <section id="bots">
+        <h3>Gestion des bots</h3>
+        <p>
+            Les bots sont conçus pour jouer automatiquement en respectant les règles du tarot.
+            Leur comportement est géré par des fonctions dédiées capables de :
+        </p>
+        <ul>
+            <li>Analyser les cartes disponibles</li>
+            <li>Jouer une carte valide selon la situation</li>
+            <li>Participer à la détermination du pli gagnant</li>
+        </ul>
+        <p>
+            Cette automatisation permet au joueur humain de se concentrer uniquement sur sa stratégie.
+        </p>
+    </section>
+
+    <section id="technos">
+        <h3>Technologies utilisées</h3>
+        <table>
+            <tr>
+                <th>Technologie</th>
+                <th>Rôle</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Langage principal et logique du jeu</td>
+            </tr>
+            <tr>
+                <td>Tkinter</td>
+                <td>Interface graphique</td>
+            </tr>
+            <tr>
+                <td>Programmation modulaire</td>
+                <td>Organisation et maintenabilité du code</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="conclusion">
+        <h3>Conclusion</h3>
+        <p>
+            Ce projet de tarot met en valeur la combinaison d’une logique de jeu complexe
+            et d’une interface graphique interactive.
+            Il constitue une base solide pour des améliorations futures telles que
+            une IA plus avancée, un système de scores persistants ou un mode multijoueur.
+    </section>
+
+</main>
+
+<footer>
+    © Rapport technique – Projet Tarot
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

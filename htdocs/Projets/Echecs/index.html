@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport – Projet Jeu d’Echecs</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Icone/DEV.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Rapport de projet</h1>
+    <h2>Jeu d’échecs en Python avec Tkinter</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#objectifs">Objectifs</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#fonctionnement">Fonctionnement</a></li>
+        <li><a href="#interface">Interface</a></li>
+        <li><a href="#technos">Technologies</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="intro">
+        <h3>Introduction</h3>
+        <p>
+            Ce projet consiste en le développement d’un jeu d’échecs en Python,
+            utilisant la bibliothèque Tkinter pour l’interface graphique.
+            L’application permet de représenter un plateau d’échecs interactif
+            et de gérer les déplacements des pièces.
+        </p>
+    </section>
+
+    <section id="objectifs">
+        <h3>Objectifs du projet</h3>
+        <ul>
+            <li>Concevoir un plateau d’échecs interactif 8×8</li>
+            <li>Gérer les déplacements des pièces via l’interface graphique</li>
+            <li>Proposer plusieurs modes de jeu</li>
+            <li>Séparer la logique du jeu et l’interface</li>
+        </ul>
+    </section>
+
+    <section id="architecture">
+        <h3>Architecture et organisation</h3>
+        <p>
+            Le projet est structuré autour d’un fichier principal responsable
+            de l’interface graphique et de la gestion des événements utilisateur.
+            La logique des déplacements est déléguée à un module externe,
+            ce qui favorise une architecture modulaire et maintenable.
+        </p>
+
+        <p>
+            Le plateau est représenté sous la forme d’une matrice 8×8,
+            chaque case contenant un code représentant une pièce ou une case vide.
+        </p>
+    </section>
+
+    <section id="fonctionnement">
+        <h3>Fonctionnement du jeu</h3>
+        <p>
+            Le déplacement d’une pièce s’effectue en deux étapes :
+            la sélection de la case de départ, puis celle de la case d’arrivée.
+            Une fois les deux cases définies, la logique de déplacement est appliquée
+            et le plateau est automatiquement mis à jour.
+        </p>
+
+        <p>
+            L’utilisateur peut également générer un nouveau plateau
+            ou choisir le type de jeu via des boutons dédiés.
+        </p>
+    </section>
+
+    <section id="interface">
+        <h3>Interface graphique</h3>
+        <p>
+            L’interface repose sur plusieurs Frame et
+            Canvas afin de structurer l’application.
+            Le plateau d’échecs est composé de boutons alternant deux couleurs,
+            reproduisant fidèlement l’apparence d’un échiquier classique.
+        </p>
+    </section>
+
+    <section id="technos">
+        <h3>Technologies utilisées</h3>
+        <table>
+            <tr>
+                <th>Technologie</th>
+                <th>Utilisation</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Langage principal</td>
+            </tr>
+            <tr>
+                <td>Tkinter</td>
+                <td>Interface graphique</td>
+            </tr>
+            <tr>
+                <td>Programmation modulaire</td>
+                <td>Séparation interface / logique</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="conclusion">
+        <h3>Conclusion</h3>
+        <p>
+            Ce projet constitue une base solide pour un jeu d’échecs complet.
+            Il démontre la maîtrise des interfaces graphiques en Python
+            ainsi que la gestion d’un jeu à logique structurée.
+            Des améliorations futures pourraient inclure une intelligence artificielle,
+            la gestion des règles avancées ou un mode multijoueur.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © Rapport technique – Projet Jeu d’Echecs
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

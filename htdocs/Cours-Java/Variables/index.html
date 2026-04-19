@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Java</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
+    <script async src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cours Java - Types de variables</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><strong>Accueil</strong></a></li>
+                <li><a href="../index.html"><strong>Retour</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="var">Définition des types de variables</h2>
+        <p>
+            En Java, les variables sont utilisées pour stocker des données. Il existe différents types de variables, notamment les types primitifs et les types de référence. 
+            Les types primitifs incluent int, double, boolean, char, etc., tandis que les types de référence incluent les classes et les interfaces. Par exemple:
+        </p>
+        
+        <table>
+            <caption>
+                Construction des variables en Java
+            </caption>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Syntaxe Générale</th>
+                    <th>AutreSyntaxe</th>
+                    <th>Exemple</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Boolean</td>
+                    <td><code>Boolean "nomVariable";</code></td>
+                    <td><code>Boolean "nomVariable" = value;</code></td>
+                    <td><code>Boolean maVariable = true;</code></td>
+                </tr>
+                <tr>
+                    <td>Character</td>
+                    <td><code>char "nomVariable";</code></td>
+                    <td><code>char "nomVariable" = value;</code></td>
+                    <td><code>char maVariable = 'A';</code></td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td><code>String "nomVariable";</code></td>
+                    <td><code>String "nomVariable" = value;</code></td>
+                    <td><code>String maVariable = "Chaine de caractères";</code></td>
+                </tr>
+
+                <tr>
+                    <td>Integer</td>
+                    <td><code>int "nomVariable";</code></td>
+                    <td><code>int "nomVariable" = value;</code></td>
+                    <td><code>int maVariable = 10;</code></td>
+                </tr>
+                <tr>
+                    <td>Float</td>
+                    <td><code>float "nomVariable";</code></td>
+                    <td><code>float "nomVariable" = value;</code></td>
+                    <td><code>float maVariable = 3.14;</code></td>
+                </tr>
+                <tr>
+                    <td>Double</td>
+                    <td><code>double "nomVariable";</code></td>
+                    <td><code>double "nomVariable" = value;</code></td>
+                    <td><code>double maVariable = 3.14159;</code></td>
+                </tr>
+
+                <tr>
+                    <td>Object</td>
+                    <td><code>Object "nomVariable";</code></td>
+                    <td><code>Object "nomVariable" = value;</code></td>
+                    <td><code>Object maVariable = "Type de valeur au choix";</code></td>
+                </tr>
+
+                <tr>
+                    <td>Tableau</td>
+                    <td><code>type[] "nomTableau";</code></td>
+                    <td><code>int[] "nomTableau" = {value1, value2, ...};</code></td>
+                    <td><code>int[] monTableau = {1, 2, 3, 4, 5};</code></td>
+                </tr>
+
+                <tr>
+                    <td>List</td>
+                    <td><code>List "nomListe";</code></td>
+                    <td><code>List&lt;type&gt; "nomListe" = new ArrayList<>();</code></td>
+                    <td><code>List&lt;Integer&gt; maListe = new ArrayList<>();</code></td>
+                </tr>
+                <tr>
+                    <td>Map</td>
+                    <td><code>Map "nomMap";</code></td>
+                    <td><code>Map&lt;type_key, type_value&gt; "nomMap" = new HashMap<>();</code></td>
+                    <td><code>Map&lt;String, Object&gt; nomMap = new HashMap<>();</code></td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <p>
+            Il est important de choisir le type de variable approprié en fonction des données qu'on souhaite stocker. Par exemple, utilisez int pour les nombres entiers,
+            double pour les nombres à virgule, boolean pour les valeurs true/false, char pour les caractères individuels, et String pour les chaînes de caractères.
+            Il existe plusieurs sous-types de variable pour les entiers, notamment:
+            <ul>
+                <li>byte : pour les nombres entiers de -128 à 127</li>
+                <li>short : pour les nombres entiers de -32 768 à 32 767</li>
+                <li>int : pour les nombres entiers de -2 147 483 648 à 2 147 483 647</li>
+                <li>long : pour les nombres entiers de -9 223 372 036 854 775 808 à 9 223 372 036 854 775 807</li>
+            </ul>
+            Voici quelques exemples de déclaration et d'initialisation de variables en Java:
+
+<pre><code>int age = 25;
+double pi = 3.14159;
+boolean isJavaFun = true;
+char grade = 'A';
+String name = "Jean";
+int[] numbers = {1, 2, 3, 4, 5};
+List&lt;String&gt; names = new ArrayList<>();
+Map&lt;String, Integer&gt; ageMap = new HashMap<>();</code></pre>
+
+            En résumé, les variables en Java sont des conteneurs pour stocker des données. Il est essentiel de comprendre les différents types de variables et de choisir le bon type
+            en fonction des besoins du programme.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cours Java. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
