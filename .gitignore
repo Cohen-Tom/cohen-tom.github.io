@@ -1,16 +1,16 @@
-# 1. Ignorer tout ce qui est dans AI_Whatsapp
-AI_Whatsapp/*
+# 1. Ignorer tout ce qui est dans htdocs/AI_Whatsapp
+htdocs/AI_Whatsapp/*
 
 # 2. SAUF le dossier Website
 # On autorise le dossier lui-même ET tout son contenu récursivement
-!AI_Whatsapp/Website/
-!AI_Whatsapp/Website/**
+!htdocs/AI_Whatsapp/Website/
+!htdocs/AI_Whatsapp/Website/**
 
 # 3. Ignorer les dossiers api
 # Sécurité supplémentaire pour les dossiers sensibles (même s'ils sont dans AI_Whatsapp)
-AI_Whatsapp/whatsapp_session/
-AI_Whatsapp/venv/
-AI_Whatsapp/API/
+htdocs/AI_Whatsapp/whatsapp_session/
+htdocs/AI_Whatsapp/venv/
+htdocs/AI_Whatsapp/API/
 
 # 4. Ignorer le script d'automatisation lui-même
 pushToGithub.py
