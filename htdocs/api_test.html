@@ -1,0 +1,24 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API test</title>
+</head>
+<body>
+    <button onclick="test()">Tester API</button>
+
+    <script>
+    function test() {
+        fetch("https://test-python-render.onrender.com/")
+            .then(res => {
+                if (!res.ok) throw new Error("HTTP error " + res.status);
+                return res.json();
+            })
+            .then(data => alert(data.message))
+            .catch(err => alert("Erreur API: " + err));
+    }
+    </script>
+
+
+</body>
+</html>
