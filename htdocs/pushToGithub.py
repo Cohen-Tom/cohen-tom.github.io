@@ -10,30 +10,16 @@ def run(cmd):
         exit()
 
 def main(commit_message=None):
-    # 📦 Aller dans le repo
-    os.chdir(ROOT)
-
-    # 📝 Message commit
-    if commit_message is None:
-        commit_message = "update automatique"
-
     print("📦 Ajout des fichiers...")
-
-    # ✅ Ajouter tout SAUF AI_Whatsapp
-    run('git add . ":!AI_Whatsapp"')
-
-    # ✅ Ajouter UNIQUEMENT Website
-    run('git add AI_Whatsapp/Website')
+    # Plus besoin de syntaxe complexe ou d'exclusion manuelle !
+    # Git lira automatiquement ton .gitignore et n'ajoutera que ce qui est autorisé.
+    run('git add .') 
 
     print("📝 Commit...")
-
+    
+    if not commit_message:
+        commit_message = "Mise à jour automatique"  # Message de commit par défaut
     run(f'git commit -m "{commit_message}"')
-
-    print("🚀 Push...")
-
-    run("git push")
-
-    print("✅ Terminé !")
 
 if __name__ == "__main__":
     main()
