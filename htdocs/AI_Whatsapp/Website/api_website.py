@@ -1,7 +1,4 @@
 import time
-from xml.dom.expatbuilder import Rejecter
-
-
 
 def getHtmlInfo(log_content:list[str])->list[tuple[str, str, str, str]]:
     """Sépare les lignes de log en éléments HTML.
