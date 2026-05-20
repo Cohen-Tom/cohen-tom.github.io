@@ -1,5 +1,10 @@
 import time
 
+def OpenLog(url:str)->list[str]:
+    with open(url, "r") as f:
+        log_content = f.readlines() # Enregistre le contenu du fichier dans ce format : ["Ligne 1", "Ligne 2", ...]
+    return log_content
+
 def getHtmlInfo(log_content:list[str])->list[tuple[str, str, str, str]]:
     """Sépare les lignes de log en éléments HTML.
 
@@ -19,13 +24,8 @@ def getHtmlInfo(log_content:list[str])->list[tuple[str, str, str, str]]:
         html_info.append((index, balise, attribute, message))
     return html_info
 
-def OpenLog(url:str)->list[str]:
-    with open(url, "r") as f:
-        log_content = f.readlines() # Enregistre le contenu du fichier dans ce format : ["Ligne 1", "Ligne 2", ...]
-    return log_content
-
 def createBalise(log_line:list[tuple[str, str, str, str]])-> list[tuple[str, str, str, str]]:
-    """ Crée un titre html à partir d'une ligne de log.
+    """ Rédige les balises html à partir d'une ligne de log.
     
     Args:
         log_line (list[tuple[str, str, str]]): La ligne de log à transformer en titre : [(index, balise, attribute, message), (index, balise, attribute, message), ...]
@@ -47,7 +47,7 @@ def createBalise(log_line:list[tuple[str, str, str, str]])-> list[tuple[str, str
 
 
 if __name__ == "__main__":
-    log_content = OpenLog("htdocs\\AI_Whatsapp\\Website\\Logs_test\\api_fun.txt")
+    log_content = OpenLog("htdocs/AI_Whatsapp/Website/Logs_test/api_fun.txt")
     html_info = getHtmlInfo(log_content)
     print("info html non traitées:", html_info)
     
