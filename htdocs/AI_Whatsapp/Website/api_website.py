@@ -18,8 +18,9 @@ def getHtmlInfo(log_content:list[str])->list[tuple[str, str, str, str]]:
     for line in log_content:
         line = line.strip("\n") # Supprime les caractères de nouvelle ligne à la fin de la ligne
         time, balise_detail, message = line.split("|") # Sépare la ligne en parties : [hh:mm:ss, index-balise-attribute, message]
-        
         index, balise, attribute = balise_detail.split("-") # Sépare la partie index-balise-attribute en éléments : [index, balise, attribute]
+        
+        #print(f"index: {index}, balise: {balise}, attribute: {attribute}, message: {message}")
         html_info.append((index, balise, attribute, message))
     return html_info
 
@@ -34,6 +35,7 @@ def createBalise(log_line:list[tuple[str, str, str, str]])-> list[tuple[str, str
     
     html_balises = []
     for index, balise, attribute, message in log_line:
+        #print(f"index: {index}, balise: {balise}, attribute: {attribute}, message: {message}")
         if attribute == "None": # Si l'attribut est "None", on ne l'inclut pas dans la balise
             balise_attribute = f"<{balise}>"
         else:
