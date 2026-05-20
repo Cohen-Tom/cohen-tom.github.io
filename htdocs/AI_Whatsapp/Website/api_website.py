@@ -9,11 +9,10 @@ def getHtmlInfo(log_content:list[str])->list[tuple[str, str, str, str]]:
     """Sépare les lignes de log en éléments HTML.
 
     Args:
-        log_content (list[str]): La liste des lignes de log : [hh:mm:ss | index-balise-attribute | message, hh:mm:ss | index-balise-attribute | message, ...]
-
+        - log_content (list[str]): La liste des lignes de log. [hh:mm:ss|index-balise-attribute|message, hh:mm:ss|index-balise-attribute|message, ...]
+        
     Returns:
-        list[tuple[str, str, str]]: La liste des éléments HTML formatés : [(index, balise, attribute, message), (index, balise, attribute, message), ...]
-    """
+        - list[tuple[str, str, str]]: La liste des éléments HTML formatés. [(index, balise, attribute, message), (index, balise, attribute, message), ...]"""
     
     html_info = []
     for line in log_content:
@@ -25,14 +24,13 @@ def getHtmlInfo(log_content:list[str])->list[tuple[str, str, str, str]]:
     return html_info
 
 def createBalise(log_line:list[tuple[str, str, str, str]])-> list[tuple[str, str, str, str]]:
-    """ Rédige les balises html à partir d'une ligne de log.
+    """Rédige les balises html à partir d'une ligne de log.
     
     Args:
-        log_line (list[tuple[str, str, str]]): La ligne de log à transformer en titre : [(index, balise, attribute, message), (index, balise, attribute, message), ...]
+        - log_line (list[tuple[str, str, str]]): La ligne de log à transformer en titre : [(index, balise, attribute, message), (index, balise, attribute, message), ...]
         
     Returns:
-        list[tuple[str, str, str, str]]: Une balise html formatée. exemple : [(<index>, <balise attribute>, <message>, <\\balise_end>), ...]
-    """
+        - list[tuple[str, str, str, str]]: Une balise html formatée. exemple : [(<index>, <balise attribute>, <message>, <\\balise_end>), ...]"""
     
     html_balises = []
     for index, balise, attribute, message in log_line:
