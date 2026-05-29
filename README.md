@@ -1,4 +1,4 @@
-# [Mon Site Web](cohen-tom.github.io/htdocs)
+# [Mon Site Web](https://cohen-tom.github.io/htdocs)
 
 ## S'enregistrer
 - git config --global user.email "you@example.com"
