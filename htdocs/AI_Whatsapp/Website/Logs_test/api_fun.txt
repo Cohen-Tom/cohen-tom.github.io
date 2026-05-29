@@ -1,2 +1,2 @@
 hh:mm:ss|0-h1-id="test" classe="Title"|Contenu de la balise h1 avec id
-hh:mm:ss|1-p-None|Contenu de la balise p sans id
+hh:mm:ss|1-p-None|Contenu de la balise p sans attribut
