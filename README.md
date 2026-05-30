@@ -9,7 +9,7 @@
 
 ## Lier VS Code avec GitHub:
 - git init
-- git git remote add origin "URL projet"
+- git remote add origin "URL projet"
 
 ## Pour Push:
 - git add file1 file2 ...
