@@ -6,18 +6,19 @@ htdocs/AI_Whatsapp/*
 !htdocs/AI_Whatsapp/Website/
 !htdocs/AI_Whatsapp/Website/**
 
-# 3. Ignorer les dossiers api
-# Sécurité supplémentaire pour les dossiers sensibles
-htdocs/AI_Whatsapp/API/
-
-# 4. Ignorer le script d'automatisation lui-même
+# 3. Ignorer le script d'automatisation lui-même
 whatsapp_session/
 htdocs/Cours-C++/exemple/
 pushToGithub.py
 
-# 5. Fichiers Python et système
+# 4. Fichiers Python et système
 .venv/
 __pycache__/
 *.pyc
 .env
 .DS_Store
+*.pdb
+*.obj
+*.ilk
+*.exe
+.vs/
