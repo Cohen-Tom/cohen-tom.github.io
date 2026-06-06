@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours C++</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
+    <script async src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cours C++ - Variables & Operateurs</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><strong>Accueil</strong></a></li>
+                <li><a href="../index.html"><strong>Retour</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2 id="var">Les variables</h2>
+            <p>
+                En C++, les variables sont utilisées pour stocker des données. Chaque variable a un type qui détermine la nature des données qu'elle peut contenir.
+                Les types de variables les plus courants en C++ sont les suivants:
+            </p>
+        
+            <table>
+                <caption>
+                    Construction des variables en C++
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Syntaxe Générale</th>
+                        <th>Autre Syntaxe</th>
+                        <th>Exemple</th>
+                        <th>Détail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Boolean</td>
+                        <td><code>Boolean "nomVariable";</code></td>
+                        <td><code>Boolean "nomVariable" = value;</code></td>
+                        <td><code>Boolean maVariable = true;</code></td>
+                        <td>Prend la valeur <span id="bold">true</span> or <span id="bold">false</span></td>
+                    </tr>
+                    <tr>
+                        <td>Character</td>
+                        <td><code>char "nomVariable";</code></td>
+                        <td><code>char "nomVariable" = value;</code></td>
+                        <td><code>char maVariable = 'A';</code></td>
+                        <td>S'écrit avec des guillemets simples <span id="bold">'</span> et peut être définie par sa valeur en ASCII</td>
+                    </tr>
+                    <tr>
+                        <td>String</td>
+                        <td><code>string "nomVariable";</code></td>
+                        <td><code>string "nomVariable" = value;</code></td>
+                        <td><code>string maVariable = "Chaine de caractères";</code></td>
+                        <td>S'écrit avec des guillemets doubles <span id="bold">"</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Integer</td>
+                        <td><code>int "nomVariable";</code></td>
+                        <td><code>int "nomVariable" = value;</code></td>
+                        <td><code>int maVariable = 10;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Float</td>
+                        <td><code>float "nomVariable";</code></td>
+                        <td><code>float "nomVariable" = valuef;</code></td>
+                        <td><code>float maVariable = 3.14f;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Double</td>
+                        <td><code>double "nomVariable";</code></td>
+                        <td><code>double "nomVariable" = value;</code></td>
+                        <td><code>double maVariable = 3.14159;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Double</td>
+                        <td><code>auto "nomVariable" = value;</code></td>
+                        <td><code>--------------------------</code></td>
+                        <td><code>auto maVariable = 3.14159;</code></td>
+                        <td>Doit obligatoirement être définie lors de sa création</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <p>
+                Il est important de choisir le type de variable approprié en fonction des données qu'on souhaite stocker. Par exemple, utilisez int pour les nombres entiers,
+                double pour les nombres à virgule, boolean pour les valeurs true/false, char pour les caractères individuels, et string pour les chaînes de caractères.
+                Il existe plusieurs sous-types de variable pour les entiers pour les types <span id="bold">signed</span>, notamment:
+                <ul>
+                    <li>short : pour les nombres entiers de -32 768 à 32 767</li>
+                    <li>int : pour les nombres entiers de -2 147 483 648 à 2 147 483 647</li>
+                    <li>long : pour les nombres entiers de -9 223 372 036 854 775 808 à 9 223 372 036 854 775 807</li>
+                </ul>
+                Voici quelques exemples de déclaration et d'initialisation de variables en C++:
+
+<pre><code>int age = 25;
+short number = 2;
+double nb = 3.1543434;
+bool isCPlusPlusFun = true;
+char grade = 'A';
+std::string name = "Jean";</code></pre>
+            </p>
+            <table>
+                <caption>Différence entre float et double</caption>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Chiffres Significatifs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>float</td>
+                        <td>6 ou 7</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 id="alert">Précision pour le type string :</h3>
+            <p>
+            Pour pouvoir utiliser le type string il faut rajouter
+<pre><code>#include &lt;string&gt;</code></pre>
+
+            dans le haut du fichier c++. Par exemple :
+            
+<pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    std::string monPrenom = "Jean";
+    std::cout << monPrenom << std::endl;
+
+    return 0;
+}
+</code></pre>
+            </p>
+        
+            <h3>Exemple de code</h3>
+<pre>
+<code>#include &lt;iostream&gt;
+#include &lt;string&gt; //Permet l'utilisations des types string
+
+using namespace std; // Evite d'écrire à chaque fois les std::
+
+int main() {
+    string monNom = "Yves";
+    string monPrenom = "Jean";
+    char maLettreFav='Z';
+    auto myDoubleNum = 9.98;    // double
+    bool enVie=true;            //Renvoie 1
+
+    short age;
+    float monArgent;
+
+    age = 20;
+    monArgent = 53401.0516f;
+
+    cout << "Je m'appelle " << monPrenom << " " << monNom
+    	 << " et j'ai " << age << " ans." << endl;
+         
+    cout << "Ma lettre favorite est : " << maLettreFav << ".";
+    return 0;
+}
+</code>
+</pre>
+        </div>
+
+        <div>
+            <h2>Les opérateurs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Symbole</th>
+                        <th>Syntaxe 1</th>
+                        <th>Syntaxe 2</th>
+                        <th>Syntaxe 3</th>
+                        <th>Syntaxe 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cours C++. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

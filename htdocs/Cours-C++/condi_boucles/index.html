@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions & Boucles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+    <header>
+        <h1>Conditions & Boucles</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html"><strong>Accueil</strong></a></li>
+                <li><a href="../index.html"><strong>Retour</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Conditions</h2>
+            <p>En Java, les conditions permettent de contrôler le flux d'exécution du programme en fonction de certaines conditions. Les structures de contrôle les plus courantes sont les
+                instructions if, else if, et else.
+            </p>
+
+<pre><code>if (condition) {
+    // Code à exécuter si la condition est vraie
+} else if (autreCondition) {
+    // Code à exécuter si l'autre condition est vraie
+} else {
+    // Code à exécuter si aucune des conditions précédentes n'est vraie
+}</code></pre>
+
+            <p>
+                Pour mettre des opérateurs logiques dans les conditions, on peut utiliser les opérateurs suivants : && (ET logique), || (OU logique), et ! (inverseur). Par exemple :
+            </p>
+<pre><code>if (condition1 && condition2) {
+    // Code à exécuter si les deux conditions sont vraies
+}
+if (condition1 || condition2) {
+    // Code à exécuter si au moins une des conditions est vraie
+}
+if (!condition) {
+    // Code à exécuter si la condition est fausse
+}
+</code></pre>
+
+            <p>
+                Il est aussi possible d'utiliser des structures de contrôle plus complexes, comme les instructions switch, qui permettent de gérer plusieurs cas en fonction de la valeur
+                d'une variable.
+            </p>
+<pre><code>switch (variable) {
+    case valeur1:
+        // Code à exécuter si la variable est égale à valeur1
+        break;
+    case valeur2:
+        // Code à exécuter si la variable est égale à valeur2
+        break;
+    default:
+        // Code à exécuter si la variable ne correspond à aucune des valeurs précédentes
+}
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Boucles</h2>
+            <p>Les boucles permettent de répéter un bloc de code tant qu'une condition est vraie. Les types de boucles les plus courants en Java sont la boucle for, la boucle while, et
+                la boucle do-while.
+            </p>
+<pre><code>for (initialisation; condition; incrémentation) {
+    // Code à exécuter à chaque itération
+}
+</code></pre>
+<pre><code>while (condition) {
+    // Code à exécuter tant que la condition est vraie
+}
+</code></pre>
+<pre><code>do {
+    // Code à exécuter au moins une fois, puis répété tant que la condition est vraie
+} while (condition);
+</code></pre>
+
+            <p>
+                La partie initialisation de la boucle for s'écrit de cette façon : <code>int var = entier</code>. <br>
+                Les boucles peuvent également être imbriquées, ce qui permet de créer des structures de contrôle plus complexes. Par exemple, une boucle for à l'intérieur d'une boucle
+                while.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cours Java. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

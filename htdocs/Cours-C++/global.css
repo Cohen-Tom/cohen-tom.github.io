@@ -82,10 +82,20 @@ pre {
     background-color: #c4c0c0;
     font-weight: bold;
     font-style: italic;
+    margin: 5px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow-x: auto;
+}
+
+#alert {
+    font-weight: bold;
+    color: red;
+}
+
+#bold {
+    font-weight: bold;
 }
 
 /* Mise en page du pied de page*/
