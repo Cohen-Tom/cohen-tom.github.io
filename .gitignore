@@ -12,7 +12,7 @@ htdocs/AI_Whatsapp/API/
 
 # 4. Ignorer le script d'automatisation lui-même
 whatsapp_session/
-htdocs\Cours-C++\exemple
+htdocs/Cours-C++/exemple/
 pushToGithub.py
 
 # 5. Fichiers Python et système
