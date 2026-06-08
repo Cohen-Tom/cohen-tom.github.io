@@ -4,7 +4,7 @@ htdocs/Cours-C++/Programmes/
 htdocs/Cours-Python/Programmes/
 .venv/
 __pycache__/
-.vs/
+.vscode/
 
 ## Ignorer tout ce qui est dans htdocs/AI_Whatsapp
 htdocs/AI_Whatsapp/*
