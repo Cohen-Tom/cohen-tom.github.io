@@ -13,6 +13,7 @@ htdocs/Cours-Python/Programmes/
 pushToGithub.py
 
 # 4. Fichiers Python et système
+linkVsCode_Github
 .venv/
 __pycache__/
 *.pyc
