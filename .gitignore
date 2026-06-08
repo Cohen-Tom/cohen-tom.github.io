@@ -1,21 +1,19 @@
-# 1. Ignorer tout ce qui est dans htdocs/AI_Whatsapp
-htdocs/AI_Whatsapp/*
-
-# 2. SAUF le dossier Website
-# On autorise le dossier lui-même ET tout son contenu récursivement
-!htdocs/AI_Whatsapp/Website/
-!htdocs/AI_Whatsapp/Website/**
-
-# 3. Ignorer le script d'automatisation lui-même
+# Dossiers
 whatsapp_session/
 htdocs/Cours-C++/Programmes/
 htdocs/Cours-Python/Programmes/
-pushToGithub.py
-
-# 4. Fichiers Python et système
-linkVsCode_Github
 .venv/
 __pycache__/
+.vs/
+
+## Ignorer tout ce qui est dans htdocs/AI_Whatsapp
+htdocs/AI_Whatsapp/*
+
+# Exceptions
+!htdocs/AI_Whatsapp/Website/
+!htdocs/AI_Whatsapp/Website/**
+
+# Fichiers
 *.pyc
 .env
 .DS_Store
@@ -23,4 +21,7 @@ __pycache__/
 *.obj
 *.ilk
 *.exe
-.vs/
+pushToGithub.py
+linkVsCode_Github.md
+
+# Exceptions
