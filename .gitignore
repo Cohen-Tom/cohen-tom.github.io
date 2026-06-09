@@ -23,6 +23,6 @@ htdocs/AI_Whatsapp/*
 *.exe
 pushToGithub.py
 linkVsCode_Github.md
-Environnement
+Environnement.md
 
 # Exceptions
