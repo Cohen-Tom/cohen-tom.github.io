@@ -1,0 +1,40 @@
+/* Mise en page Header */
+
+/* Mise en page Body */
+main {
+    background-image: url(Images/Fond.jpg);
+    background-size: cover;
+    background-position: 0;
+    border-radius: 10px;
+    height: 100%;
+    align-content: center;
+    
+}
+
+.chapitres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #9c9090;
+    border-radius: 15px;
+    background-color: brown;
+    text-align: center;
+    box-shadow: -4px 5px 14px 0px;
+    width: 70%;
+}
+
+.card p {
+    text-align: center;
+}
+
+
+/* Mise en page Footer */
+footer {
+    width: 100%;
+}

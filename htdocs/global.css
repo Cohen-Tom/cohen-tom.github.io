@@ -1,10 +1,12 @@
 /* Mise en Page de l'entête*/
 header {
+    flex: 1;
     background-color: #3f3838;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin: 0;
+    max-height: 10%;
 }
 
 header nav ul{
@@ -38,14 +40,18 @@ header a:hover {
 
 /* Mise en page du corps*/
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dbd8d8;
     color: #333;
     margin: 0;
+    height: 100vh;
 }
 
 main {
-    margin: auto 15%;
+    flex: 2;
+    margin: 2px 15%;
     border-style: ridge;
     padding: 20px 30px;
 }
@@ -82,16 +88,29 @@ pre {
     background-color: #c4c0c0;
     font-weight: bold;
     font-style: italic;
+    margin: 5px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow-x: auto;
 }
 
+#alert {
+    font-weight: bold;
+    color: red;
+}
+
+#bold {
+    font-weight: bold;
+}
+
 /* Mise en page du pied de page*/
 footer {
+    flex: 3;
     background-color: #3f3838;
     color: white;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
+    max-height: 5%;
 }
