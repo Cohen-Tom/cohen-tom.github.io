@@ -16,18 +16,35 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-}
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
+    justify-items: center;
+    align-items: center;
+}
+/*
 .card{
-    background-color: brown;
+    background-color: rgb(255, 147, 147);
     border: 1px solid #9c9090;
     border-radius: 5px;
     padding: 20px;
     margin:  25px;
     width: 300px;
     height: 75%;
+    text-align: center;
+}*/
+.card {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #9c9090;
+    border-radius: 15px;
+    background-color: rgb(255, 147, 147);
+    box-shadow: -4px 5px 14px 0px;
+    width: 70%;
+    text-align: center;
+}
+
+.card p {
     text-align: center;
 }
 
@@ -59,9 +76,9 @@ main {
     text-align: justify;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .grid-container {
         grid-template-columns: 100%;
+        grid-template-rows: auto;
     }
-    
 }

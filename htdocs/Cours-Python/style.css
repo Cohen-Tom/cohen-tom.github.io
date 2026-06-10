@@ -6,7 +6,6 @@ main {
     background-size: cover;
     background-position: 0;
     border-radius: 10px;
-    height: 100%;
     align-content: center;
     
 }
@@ -23,10 +22,35 @@ main {
     padding: 10px;
     border: 1px solid #9c9090;
     border-radius: 15px;
-    background-color: brown;
+    background-color: rgb(255, 147, 147);
     text-align: center;
     box-shadow: -4px 5px 14px 0px;
     width: 70%;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card button {
+    display: block;
+    background-color: #4346f3;
+    color: white;
+    border: 1px solid #9c9090;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #5558ff;
+
+    border: none;
+    border-radius: 5px;
+    
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .card p {
@@ -37,4 +61,13 @@ main {
 /* Mise en page Footer */
 footer {
     width: 100%;
+}
+
+
+
+@media screen and (max-width: 820px) {
+    .chapitres {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
 }
