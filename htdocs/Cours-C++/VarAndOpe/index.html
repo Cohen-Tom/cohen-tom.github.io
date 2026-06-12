@@ -47,21 +47,21 @@
                         <td><code>Boolean "nomVariable";</code></td>
                         <td><code>Boolean "nomVariable" = value;</code></td>
                         <td><code>Boolean maVariable = true;</code></td>
-                        <td>Prend la valeur <span id="bold">true</span> or <span id="bold">false</span></td>
+                        <td>Prend la valeur <span class="bold">true</span> or <span class="bold">false</span></td>
                     </tr>
                     <tr>
                         <td>Character</td>
                         <td><code>char "nomVariable";</code></td>
                         <td><code>char "nomVariable" = value;</code></td>
                         <td><code>char maVariable = 'A';</code></td>
-                        <td>S'écrit avec des guillemets simples <span id="bold">'</span> et peut être définie par sa valeur en ASCII</td>
+                        <td>S'écrit avec des guillemets simples <span class="bold">'</span> et peut être définie par sa valeur en ASCII</td>
                     </tr>
                     <tr>
                         <td>String</td>
                         <td><code>string "nomVariable";</code></td>
                         <td><code>string "nomVariable" = value;</code></td>
                         <td><code>string maVariable = "Chaine de caractères";</code></td>
-                        <td>S'écrit avec des guillemets doubles <span id="bold">"</span></td>
+                        <td>S'écrit avec des guillemets doubles <span class="bold">"</span></td>
                     </tr>
 
                     <tr>
@@ -69,23 +69,26 @@
                         <td><code>int "nomVariable";</code></td>
                         <td><code>int "nomVariable" = value;</code></td>
                         <td><code>int maVariable = 10;</code></td>
+                        <td class="emptyCase"></td>
                     </tr>
                     <tr>
                         <td>Float</td>
                         <td><code>float "nomVariable";</code></td>
                         <td><code>float "nomVariable" = valuef;</code></td>
                         <td><code>float maVariable = 3.14f;</code></td>
+                        <td class="emptyCase"></td>
                     </tr>
                     <tr>
                         <td>Double</td>
                         <td><code>double "nomVariable";</code></td>
                         <td><code>double "nomVariable" = value;</code></td>
                         <td><code>double maVariable = 3.14159;</code></td>
+                        <td class="emptyCase"></td>
                     </tr>
                     <tr>
                         <td>Double</td>
                         <td><code>auto "nomVariable" = value;</code></td>
-                        <td><code>--------------------------</code></td>
+                        <td class="emptyCase"></td>
                         <td><code>auto maVariable = 3.14159;</code></td>
                         <td>Doit obligatoirement être définie lors de sa création</td>
                     </tr>
@@ -96,7 +99,7 @@
             <p>
                 Il est important de choisir le type de variable approprié en fonction des données qu'on souhaite stocker. Par exemple, utilisez int pour les nombres entiers,
                 double pour les nombres à virgule, boolean pour les valeurs true/false, char pour les caractères individuels, et string pour les chaînes de caractères.
-                Il existe plusieurs sous-types de variable pour les entiers pour les types <span id="bold">signed</span>, notamment:
+                Il existe plusieurs sous-types de variable pour les entiers pour les types <span class="bold">signed</span>, notamment:
                 <ul>
                     <li>short : pour les nombres entiers de -32 768 à 32 767</li>
                     <li>int : pour les nombres entiers de -2 147 483 648 à 2 147 483 647</li>
@@ -182,30 +185,77 @@ int main() {
 
         <div>
             <h2>Les opérateurs</h2>
+            <p>Dans ce sous-chapitre, nous allons voir les différents opérateurs qui existent et comment les
+                utiliser. On aura donc à chaque fois le symbole correspondant et la façon d'écrire l'opération:
+            </p>
             <table>
+                <caption>Les opérations</caption>
                 <thead>
                     <tr>
                         <th>Nom</th>
                         <th>Symbole</th>
                         <th>Syntaxe 1</th>
-                        <th>Syntaxe 2</th>
-                        <th>Syntaxe 3</th>
-                        <th>Syntaxe 4</th>
+                        <th>Exemple</th>
+                        <th>Précision</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
+                        <td>Addition</td>
+                        <td class="symbole">+</td>
+                        <td>var <span class="symbole">+</span> value</td>
+                        <td><span class="bold">10+3;</span> //Retourne 13</td>
+                        <td class="emptyCase"></td>
                     </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
+                    <tr>
+                        <td>Soustraction</td>
+                        <td class="symbole">-</td>
+                        <td>var <span class="symbole">-</span> value</td>
+                        <td><span class="bold">10-3;</span> //Retourne 7</td>
+                        <td class="emptyCase"></td>
+                    </tr>
+                    <tr>
+                        <td>Incrémentation</td>
+                        <td class="symbole">++</td>
+                        <td><span class="symbole">++</span>var</td>
+                        <td><span class="bold">++var;</span> //Equivalent à 1 + var</td>
+                        <td>Ajoute automatiquement 1 à 'var'.<br>Différent de var++ (var + 1).</td>
+                    </tr>
+                    <tr>
+                        <td>Décrémentation</td>
+                        <td class="symbole">--</td>
+                        <td><span class="symbole">--</span>var</td>
+                        <td><span class="bold">--var;</span> //Equivalent à 1 - var</td>
+                        <td>Enlève automatiquement 1 à 'var'.<br>Différent de var-- (var - 1).</td>
+                    </tr>
+                    <tr>
+                        <td>Multiplication</td>
+                        <td class="symbole">*</td>
+                        <td>var <span class="symbole">*</span> value</td>
+                        <td><span class="bold">10*3;</span> //Retourne 30</td>
+                        <td class="emptyCase"></td>
+                    </tr>
+                    <tr>
+                        <td>Division</td>
+                        <td class="symbole">/</td>
+                        <td>var <span class="symbole">/</span> value</td>
+                        <td><span class="bold">10/3;</span> //Retourne 3 pour deux entiers</td>
+                        <td>Le résultat dépend des types utilisés</td>
+                    </tr>
+                    <tr>
+                        <td>Modulo</td>
+                        <td class="symbole">%</td>
+                        <td>var <span class="symbole">%</span> value</td>
+                        <td><span class="bold">10/3;</span> //Retourne 1</td>
+                        <td>Retourne le reste de la division entière</td>
+                    </tr>
+                    <tr>
+                        <td>Puissance</td>
+                        <td class="symbole">pow()</td>
+                        <td><span class="symbole">pow(</span>var, value<span class="symbole">)</span></td>
+                        <td><span class="bold">pow(10,3);</span> //Retourne 1000</td>
+                        <td>Nécessite d'inclure le module<br><span class="bold">cmath</span>.</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

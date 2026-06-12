@@ -48,6 +48,20 @@ body {
     height: 100vh;
 }
 
+h2 {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+
+h3 {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+
 main {
     flex: 2;
     margin: 10px 15%;
@@ -73,6 +87,11 @@ table {
 table th, table td {
     border: 2px solid #333;
     padding: 10px;
+    font-size: 15px;
+}
+
+table th {
+    font-size: large;
 }
 
 table caption {
@@ -81,6 +100,11 @@ table caption {
     margin-bottom: 10px;
     font-weight: bold;
     caption-side: bottom;
+}
+
+.emptyCase {
+    background-color: #2aa5393b;
+    border: 0;
 }
 
 pre {
@@ -99,7 +123,7 @@ pre {
     color: red;
 }
 
-#bold {
+.bold {
     font-weight: bold;
 }
 

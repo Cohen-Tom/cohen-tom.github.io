@@ -1,1 +1,5 @@
 /*Mise en page du corps*/
+.symbole {
+    color: red;
+    font-weight: bold;
+}
