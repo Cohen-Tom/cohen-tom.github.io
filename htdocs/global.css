@@ -55,12 +55,14 @@ h2 {
     text-decoration-thickness: 2px;
 }
 
+/*
 h3 {
     text-decoration-line: underline;
     text-decoration-color: red;
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
 }
+*/
 
 main {
     flex: 2;
