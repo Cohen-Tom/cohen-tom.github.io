@@ -108,11 +108,12 @@ footer {
     background-color: #3f3838;
     color: white;
     text-align: center;
+    align-content: center;
     width: 100%;
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) { /*max-width: 1300px*/
     body {
         grid-template-rows: auto;
         height: auto;
