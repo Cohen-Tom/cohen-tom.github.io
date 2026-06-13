@@ -42,7 +42,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 12% 83% 5%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #dbd8d8;
+    background: radial-gradient(ellipse at center, #5981a8, #e9eef3);
     color: #333;
     margin: 0;
     height: 100vh;
@@ -73,7 +73,6 @@ main {
 
 main p {
     margin: 20px auto;
-    text-align: justify;
 }
 
 table {

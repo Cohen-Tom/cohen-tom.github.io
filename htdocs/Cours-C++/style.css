@@ -25,7 +25,7 @@ main {
     padding: 10px;
     border: 1px solid #9c9090;
     border-radius: 15px;
-    background-color: rgb(255, 147, 147);
+    background-color: rgb(232 255 147 / 51%);
     text-align: center;
     box-shadow: -4px 5px 14px 0px;
     width: 70%;
@@ -33,6 +33,8 @@ main {
 
 .card p {
     text-align: center;
+    color: #5b2e06;
+    font-weight: bold;
 }
 
 .card button {
