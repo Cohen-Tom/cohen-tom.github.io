@@ -40,12 +40,16 @@ header a:hover {
 body {
     display: grid;
     grid-template-columns: 100%;
+    grid-template-rows: auto;
+    height: auto;
+
+    /*
     grid-template-rows: 12% 83% 5%;
+    */
     font-family: Arial, Helvetica, sans-serif;
     background: radial-gradient(ellipse at center, #5981a8, #e9eef3);
     color: #333;
     margin: 0;
-    height: 100vh;
 }
 
 h2 {
@@ -140,7 +144,6 @@ footer {
 
 @media screen and (max-width: 1600px) { /*max-width: 1300px*/
     body {
-        grid-template-rows: auto;
-        height: auto;
+        
     }
 }
