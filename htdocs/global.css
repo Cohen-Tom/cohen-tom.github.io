@@ -140,10 +140,3 @@ footer {
     align-content: center;
     width: 100%;
 }
-
-
-@media screen and (max-width: 1600px) { /*max-width: 1300px*/
-    body {
-        
-    }
-}
