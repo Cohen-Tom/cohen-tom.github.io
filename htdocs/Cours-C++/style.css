@@ -10,8 +10,8 @@ main {
     background-image: url(images/java_fond.jpg);
     background-size: cover;
     background-position: center;
-    padding: 20px;
     border-radius: 10px;
+    align-content: center;
 }
 
 .grid-container {
@@ -36,8 +36,7 @@ main {
 }
 
 .card button {
-    display: block;
-    background-color: #4346f3;
+    background-color: #283320;
     color: white;
     border: 1px solid #9c9090;
     border-radius: 5px;
@@ -48,11 +47,6 @@ main {
 
 .card button:hover {
     background-color: #5558ff;
-
-    border: none;
-    border-radius: 5px;
-    
-    padding: 10px 20px;
     cursor: pointer;
 }
 
