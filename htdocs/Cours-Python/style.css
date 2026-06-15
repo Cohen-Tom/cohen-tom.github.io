@@ -12,7 +12,6 @@ main {
     background-image: url(Images/Fond.jpg);
     background-size: cover;
     background-position: 0;
-    border-radius: 10px;
     align-content: center;
     
 }

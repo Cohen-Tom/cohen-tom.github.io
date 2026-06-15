@@ -72,6 +72,7 @@ main {
     flex: 2;
     margin: 10px 15%;
     border-style: ridge;
+    border-color: goldenrod;
     padding: 20px 30px;
 }
 

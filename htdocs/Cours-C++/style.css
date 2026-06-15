@@ -10,7 +10,6 @@ main {
     background-image: url(images/java_fond.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
     align-content: center;
 }
 
